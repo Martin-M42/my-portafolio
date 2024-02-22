@@ -1,38 +1,127 @@
 .App {
   text-align: center;
+  background-color: #aebace;
+  min-height: 50vw;
+  background-image: url(/public/relivesurface.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pusher{
+  height: 10vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#profpic-container{
+  position: relative;
+  top: 7vw;
+  max-width: 50vw;
+}
+
+#titlenamecontainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-end;
+  max-width: 75vw;
+  position: relative;
   color: white;
+  font-size: 4vw;
+  font-weight: bolder;
+  font-style: italic;
+  bottom: 25vw;
+  left: 15vw;
 }
 
-.App-link {
-  color: #61dafb;
+#fsdeveloper{
+  color: #0e3742;
+  text-decoration: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 0.70em;
+  outline: none;
+  animation: animate 5s linear infinite
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#myname{
+  color: rgb(206, 233, 235);
+  text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4;
+  text-decoration: none;
+  -webkit-box-reflect: below -2.2vw linear-gradient(transparent, #0004);
+  outline: none;
+}
+
+.picos{
+  color: #e27b7b;
+  text-shadow: 0 0 10px #f41f03, 0 0 20px #f41f03, 0 0 40px #f41f03;
+  text-decoration: none;
+  -webkit-box-reflect: below -2.2vw linear-gradient(transparent, #0004);
+  outline: none;
+}
+
+.profilepicture{
+  border-radius: 500px;
+  height: 150px;
+  width: 150px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.774);
+}
+
+/*     ANIMACIONES          */
+
+.profpic-enter{
+  position: relative;
+  opacity: 0;
+  right: 200px;
+}
+
+.profpic-enter-active{
+  opacity: 1;
+  right: 0px;
+  transition: opacity 2000ms, right 2000ms;
+}
+
+.titlein-enter{
+  position: relative;
+  opacity: 0;
+  left: 200px;
+}
+
+.titlein-enter-active{
+  opacity: 1;
+  left: 0px;
+  transition: opacity 2000ms, left 2000ms;
+}
+
+.contentin-enter{
+  opacity: 0;
+}
+
+.contentin-enter-active{
+  opacity: 1;
+  transition: opacity 3000ms;
+}
+
+/*      Media Queries     */
+
+
+@media(min-width: 700px){
+  .profilepicture{
+    border-radius: 500px;
+    height: 350px;
+    width: 350px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@keyframes animate{
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+    color: #0e3742;
+    text-shadow: none;
+
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    
   }
 }
