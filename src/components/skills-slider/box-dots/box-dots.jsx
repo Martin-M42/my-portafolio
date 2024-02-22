@@ -25,7 +25,7 @@ export const Boxdots = ({ size, actual }) => {
       }}
     >
       {lista.map((objeto, key) =>
-        objeto === actual ? <Blackdot /> : <Whitedot />
+        objeto === actual ? <Blackdot key={key} /> : <Whitedot key={key} />
       )}
     </div>
   );
