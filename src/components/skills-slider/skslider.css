@@ -1,0 +1,258 @@
+#skcontainer{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+}
+
+.languagecontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.langicon{
+    height: 8vw;
+    width: 8vw;
+}
+
+.langsubitem{
+  margin: 0.1vw;
+  font-size: 3.4vw;
+  white-space: nowrap;
+  position: relative;
+  left: 4vw;
+}
+
+#reacttech{
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 14vw;
+    position: relative;
+    left: -4vw;
+}
+
+.skbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 60vw;
+    height: 70vw;
+    border-radius: 10px;
+    background-color:rgba(5, 54, 216, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.774);
+    overflow: hidden;
+}
+
+.skbutton{
+    height:15vw;
+    width: 15vw;
+    background-color: cornflowerblue;
+}
+
+.skilldata{
+    margin: 2vw;
+    font-size: 5vw;
+}
+
+.skilltitle{
+  font-size: 6.5vw;
+  white-space: nowrap;
+}
+
+
+.App-logo {
+    height: 12vw;
+    width: 12vw;
+    pointer-events: none;
+  }
+
+  /* SLIDERS */
+
+  /*derecha*/
+  .slider-right-exit{
+    transform: translateX(0%);
+  }
+
+  .slider-right-exit-active{
+    transform: translate(-300%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  .slider-right-enter{
+    transform: translate(300%);
+  }
+
+  .slider-right-enter-active{
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  /*izquierda*/
+  .slider-left-exit{
+    transform: translateX(0%);
+  }
+
+  .slider-left-exit-active{
+    transform: translate(300%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  .slider-left-enter{
+    transform: translate(-300%);
+  }
+
+  .slider-left-enter-active{
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  /*wrapper*/
+
+  .sliderwrapper{
+    position: relative;
+  }
+
+  /*childs*/
+  .slideritems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 19vw;
+  }
+
+  #lenguajesitems{
+    left: -18vw;
+  }
+
+  #frontenditems{
+    left: -16vw;
+  }
+
+  #backenditems{
+    left: -15vw;
+  }
+
+  #herramientasitems{
+    left: -25vw;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  @media (min-width: 700px){
+
+    .App-logo {
+      height: 4vw;
+      width: 4vw;
+    }
+
+    .skbox{
+      width: 20vw;
+      height: 22vw;
+  }
+
+  .skbutton{
+    height: 5vw;
+    width: 5vw;
+    background-color: cornflowerblue;
+}
+
+.skilldata{
+  margin: 0.7vw;
+  font-size: 1.4vw;
+}
+
+.skilltitle{
+font-size: 2.1vw;
+}
+
+.langicon{
+  height: 2vw;
+  width: 2vw;
+}
+
+.langsubitem{
+margin: 0.1vw;
+font-size: 1.1vw;
+position: relative;
+left: 4vw;
+}
+
+#reacttech{
+    left: -1vw;
+}
+
+#lenguajesitems{
+  left: -5.9vw;
+}
+
+#frontenditems{
+  left: -6.3vw;
+}
+
+#backenditems{
+  left: -5.5vw;
+}
+
+#herramientasitems{
+  left: -8vw;
+}
+
+/* SLIDERS */
+
+  /*derecha*/
+  .slider-right-exit{
+    transform: translateX(0%);
+  }
+
+  .slider-right-exit-active{
+    transform: translate(-100%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  .slider-right-enter{
+    transform: translate(100%);
+  }
+
+  .slider-right-enter-active{
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  /*izquierda*/
+  .slider-left-exit{
+    transform: translateX(0%);
+  }
+
+  .slider-left-exit-active{
+    transform: translate(100%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  .slider-left-enter{
+    transform: translate(-100%);
+  }
+
+  .slider-left-enter-active{
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+  }
+
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

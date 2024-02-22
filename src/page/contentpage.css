@@ -1,0 +1,212 @@
+.pcontenido{
+    position: relative;
+    bottom: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vw;
+}
+
+.sectiontitles{
+  color: whitesmoke;
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.educationtitle{
+  color: rgb(206, 233, 235);
+  text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4;
+  text-decoration:underline;
+  text-align: left;
+}
+
+.contactsection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20vw;
+}
+
+.contactline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 3vw;
+    width: 3vw;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.divisores{
+    width: 90vw;
+    opacity: 0.7;
+}
+
+.textos{
+    max-width: 50vw;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    text-align: left;
+}
+
+#slidertext{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    text-align:justify;
+}
+
+/* bloque educacion */ 
+.edtitles{
+  color: #e27b7b;
+  text-shadow: 0 0 10px #f41f03, 0 0 20px #f41f03, 0 0 40px #f41f03;
+  text-decoration: none;
+  outline: none;
+}
+
+#middleblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    hyphens: auto;
+    width: 50vw;
+}
+
+#leftblock{
+    align-self: flex-start;
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+#rightblock{
+    align-self: flex-end;
+    text-align: end;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+#blockdivisor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-radius: 30px;
+    border-color: white;
+    background-color: white;
+    box-shadow: 10px 10px 10px #414e52;
+    align-self: center;
+    width: 50vw;
+    height: 2vw;
+    margin: 3vw;
+}
+
+#contactamee{
+    animation: meneo 2s linear infinite;
+}
+
+.balldiv{
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50px;
+}
+
+@media(min-width: 700px){
+
+  #middleblock{
+    flex-direction: row;
+    justify-content: center;
+    hyphens: auto;
+    width: 50vw;
+}
+
+#leftblock{
+    align-self: flex-start;
+    width: 22vw;
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+#rightblock{
+    align-self: flex-end;
+    width: 22vw;
+    text-align: end;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+#blockdivisor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.3vw;
+    border-radius: 30px;
+    border-color: white;
+    background-color: white;
+    box-shadow: 10px 10px 10px #414e52;
+    width: 2px;
+    height: 40vw;
+    margin: 3vw;
+}
+  
+  .balldiv{
+    
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50px;
+}
+
+}
+
+@keyframes meneo {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
